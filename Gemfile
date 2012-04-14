@@ -11,7 +11,6 @@ group :development do
   gem 'therubyracer'
 end
 
-gem 'thin'
 
 group :production do
   gem 'pg'
