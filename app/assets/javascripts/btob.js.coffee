@@ -3,7 +3,9 @@ window.Btob =
   Collections: {}
   Views: {}
   Routers: {}
-  init: -> alert 'Hello from Backbone!'
+  init: -> 
+    new Btob.Routers.Entries()
+    Backbone.history.start()
 
 $(document).ready ->
   Btob.init()
