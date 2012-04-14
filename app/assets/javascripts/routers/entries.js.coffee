@@ -3,8 +3,12 @@ class Btob.Routers.Entries extends Backbone.Router
     '': 'index'
     'entries/:id': 'show'
 
+  initialize: ->
+    @collection = new Btob.Collections.Entries()
+    @collection.fetch()
+
   index: ->
-    view = new Btob.Views.EntriesIndex()
+    view = new Btob.Views.EntriesIndex(collection: @collection)
     $('#container').html(view.render().el)
 
   show: (id) ->
