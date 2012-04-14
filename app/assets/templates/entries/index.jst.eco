@@ -6,7 +6,7 @@
 </form>
 
 <ul>
-	<% for entry in @entries.models: %>
+	<% for entry in @entries.models.slice(0).reverse(): %>
 	  <li><%= entry.get('message') %></li>
 	<% end %>
 </ul>

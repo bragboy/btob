@@ -2,7 +2,7 @@ class EntriesController < ApplicationController
 	respond_to :json
 
 	def index
-		respond_with Entry.all
+		respond_with Entry.last(20)
 	end
 
 	def show

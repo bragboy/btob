@@ -6,6 +6,7 @@ class Btob.Routers.Entries extends Backbone.Router
   initialize: ->
     @collection = new Btob.Collections.Entries()
     @collection.fetch()
+    window.setInterval(@refreshFromServer, 2000);
 
   index: ->
     view = new Btob.Views.EntriesIndex(collection: @collection)
@@ -13,3 +14,9 @@ class Btob.Routers.Entries extends Backbone.Router
 
   show: (id) ->
     alert "Entry #{id}"
+
+  refreshFromServer: =>
+    @collection.fetch()
+
+  
+

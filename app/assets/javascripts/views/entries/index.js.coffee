@@ -17,3 +17,4 @@ class Btob.Views.EntriesIndex extends Backbone.View
     event.preventDefault()
     @collection.create message: $('#new_entry_message').val()
     $('#new_entry')[0].reset()
+    $('#new_entry_message').focus()
