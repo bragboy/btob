@@ -5,8 +5,4 @@
 	<input type="submit" value="SEND"/>
 </form>
 
-<ul>
-	<% for entry in @entries.models.slice(0).reverse(): %>
-	  <li><%= entry.get('message') %></li>
-	<% end %>
-</ul>
+<ul id="entries"></ul>

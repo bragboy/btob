@@ -21,4 +21,13 @@ class EntriesController < ApplicationController
 		respond_with Entry.destroy(params[:id])
 	end
 
+	def latest
+		#respond_with Entry.find(:all, :conditions =>["id > ?", params[:id]]) if (params[:id].to_i)
+		if (params[:id])
+			respond_with Entry.where("id > ?", params[:id]) 
+		else
+			respond_with []
+		end
+	end
+
 end

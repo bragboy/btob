@@ -4,6 +4,8 @@ Btob::Application.routes.draw do
     resources :entries
   end
 
+  match 'entries/latest' => 'entries#latest'
+
   root to: "main#index"
 
   # The priority is based upon order of creation:
