@@ -8,6 +8,8 @@ Btob::Application.routes.draw do
 
   root to: "main#index"
 
+  get "signup" => "users#new", :as => "signup"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

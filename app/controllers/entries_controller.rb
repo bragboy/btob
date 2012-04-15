@@ -22,7 +22,6 @@ class EntriesController < ApplicationController
 	end
 
 	def latest
-		#respond_with Entry.find(:all, :conditions =>["id > ?", params[:id]]) if (params[:id].to_i)
 		if (params[:id])
 			respond_with Entry.where("id > ?", params[:id]) 
 		else
