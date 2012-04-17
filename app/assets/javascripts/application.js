@@ -21,3 +21,17 @@
 //= require_tree .//views
 //= require_tree .//routers
 //= require_tree .
+
+//this functions takes two arguments which will blink
+function blinkTitle(m1,m2) {
+  document.title = m1;
+  //this command calls the function again after 1 second
+  //with arguments swapped for calling blinkTitle(m2,m1)
+  notificationTimer = setTimeout("blinkTitle(' "+m2+" ',' "+m1+" ')", 1500);
+}
+
+//this function stops the blinking of title bar
+function stopBlinkTitle() {
+  //here we use the variable defined above
+  clearTimeout(notificationTimer);
+}

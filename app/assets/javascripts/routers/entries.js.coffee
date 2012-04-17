@@ -21,7 +21,10 @@ class Btob.Routers.Entries extends Backbone.Router
     @new_collection.fetch()
     
   repopuplate: ->
-    @collection.add(@new_collection.models) if @new_collection.length > 0
+    if @new_collection.length > 0
+      @collection.add(@new_collection.models)
+      blinkTitle('You have a new Message','iTach')
+    end
       
     
 

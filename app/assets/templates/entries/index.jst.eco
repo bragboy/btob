@@ -1,7 +1,7 @@
 <h1>iTach</h1>
 
 <form id="new_entry">
-	<input type="text" name="message" id="new_entry_message"/> 
+	<input type="text" name="message" id="new_entry_message" onfocus="stopBlinkTitle()"/> 
 	<input type="submit" value="SEND"/>
 </form>
 
