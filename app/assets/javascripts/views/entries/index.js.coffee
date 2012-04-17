@@ -20,5 +20,5 @@ class Btob.Views.EntriesIndex extends Backbone.View
 
   createEntry: (event) ->
     event.preventDefault()
-    @collection.create message: $('#new_entry_message').val()
+    @collection.create message: $('#new_entry_message').val(),  person: $('#your_name').val()
     $('#new_entry')[0].reset()

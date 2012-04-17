@@ -1,1 +1,3 @@
-<%= @entry.get('message') %>
+<div class='bubbledLeft'> 
+	<%= @entry.get('person') %>:&nbsp;<%= @entry.get('message') %>
+</div>
