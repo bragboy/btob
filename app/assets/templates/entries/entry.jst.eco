@@ -1,1 +1,1 @@
-<div class="bubbledLeft"> <%= @entry.get('message') %> </div>
+<%= @entry.get('message') %>
