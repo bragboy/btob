@@ -22,6 +22,9 @@
 //= require_tree .//routers
 //= require_tree .
 
+//this holds the ID returned setTimeout
+ var notificationTimer = null;
+
 //this functions takes two arguments which will blink
 function blinkTitle(m1,m2) {
   document.title = m1;

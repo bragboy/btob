@@ -24,7 +24,6 @@ class Btob.Routers.Entries extends Backbone.Router
     if @new_collection.length > 0
       @collection.add(@new_collection.models)
       blinkTitle('You have a new Message','iTach')
-    end
       
     
 
