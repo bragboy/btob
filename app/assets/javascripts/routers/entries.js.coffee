@@ -9,6 +9,7 @@ class Btob.Routers.Entries extends Backbone.Router
     @new_collection = new Btob.Collections.Entries()
     @new_collection.on('reset', @repopuplate, this)
     window.setInterval(@refreshFromServer, 2000);
+    window.onfocus = @stopBlink
   index: ->
     view = new Btob.Views.EntriesIndex(collection: @collection)
     $('#container').html(view.render().el)
@@ -24,8 +25,6 @@ class Btob.Routers.Entries extends Backbone.Router
     if @new_collection.length > 0
       @collection.add(@new_collection.models)
       blinkTitle('You have a new Message','iTach')
-      
-    
 
-  
-
+  stopBlink: ->
+    stopBlinkTitle()
