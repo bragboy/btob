@@ -1,1 +1,3 @@
 Demo Chat Application hosted on heroku powered by Rails 3.x and Backbone.js
+
+http://btob.herokuapp.com
