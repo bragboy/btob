@@ -1,3 +1,8 @@
 Demo Chat Application hosted on heroku powered by Rails 3.x and Backbone.js
 
 http://btob.herokuapp.com
+
+For pull requests for this application, please send me a message via Github. I will merge them as soon as I can.
+
+Thanks,
+Braga
