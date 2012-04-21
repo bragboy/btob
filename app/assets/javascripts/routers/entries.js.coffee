@@ -23,4 +23,5 @@ class Btob.Routers.Entries extends Backbone.Router
   repopuplate: ->
     if @new_collection.length > 0
       @collection.add(@new_collection.models)
-      $.titleAlert("You have a new message", {requireBlur:false, stopOnFocus:true, duration:0, interval:1500 });
+      if ($("#new_entry_message")[0] != document.activeElement)
+        $.titleAlert("You have a new message", {requireBlur:false, stopOnFocus:true, duration:0, interval:1500 });
