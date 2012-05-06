@@ -23,3 +23,12 @@
 //= require_tree .
 
 //this holds the ID returned setTimeout
+var inactive;
+
+window.onfocus = function () { 
+  isActive = false; 
+}; 
+
+window.onblur = function () { 
+  isActive = true; 
+}; 
