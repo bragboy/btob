@@ -26,9 +26,9 @@
 var inactive;
 
 window.onfocus = function () { 
-  isActive = false; 
+  inactive = false; 
 }; 
 
 window.onblur = function () { 
-  isActive = true; 
+  inactive = true; 
 }; 
