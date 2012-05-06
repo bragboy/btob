@@ -1,3 +1,7 @@
+
 <div class= <%= if eval("$('#your_name').val()") == @entry.get('person') then 'bubbledLeft'  else 'bubbledRight'  %> >
 	<%= @entry.get('person') %>:&nbsp;<%= @entry.get('message') %>
+</div>
+<div class= <%= if eval("$('#your_name').val()") == @entry.get('person') then 'timestampLeft'  else 'timestampRight'  %>> 
+	<%= @entry.get('local_time') %>
 </div>

@@ -141,3 +141,47 @@ li {
   -moz-border-image: url(speech_bubble_right_2.png) 8 17 8 10 stretch stretch ;
   -o-border-image: url(speech_bubble_right_2.png) 8 17 8 10 stretch stretch ;
 }
+
+.timestampRight{
+  position: relative;
+  margin-top: 15px;
+  max-width: 80%;
+  float: right;
+  margin-left: auto;
+  text-align: right;
+  color: grey;
+  padding: 4px 15px 4px 10px; /*position within the border*/  
+  font-size: 0.9em;
+}
+
+.timestampRight:before{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.timestampLeft{
+  float: left;
+  margin-right: auto;
+  padding: 4px 10px 4px 15px; /*position within the border*/
+  position: relative;
+  margin-top: 15px;
+  max-width: 80%;
+  color: grey;
+  font-size: 0.9em;
+}
+
+.timestampLeft:before{
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  content: "";
+}
+
+
+
