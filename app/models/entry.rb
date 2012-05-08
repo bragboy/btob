@@ -8,7 +8,8 @@ class Entry < ActiveRecord::Base
   end
 
   def local_time
-  	self.read_attribute(:created_at).getlocal.strftime("%I:%M %p")
+  	# Need to change this logic later
+  	(self.read_attribute(:created_at).getlocal + 5.hour + 30.minute).strftime("%I:%M %p")
   end
 
 
